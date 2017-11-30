@@ -14,6 +14,7 @@ class Direction{
     
 }
 
+//Direction enum, also the rotation
 enum DIRECTION:Int{
     case NORTH = 180, EAST = 90, SOUTH = 0, WEST = -90
 }

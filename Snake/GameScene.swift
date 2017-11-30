@@ -8,6 +8,7 @@
 
 import SpriteKit
 import GameplayKit
+import UIKit
 
 class GameScene: SKScene {
     
@@ -16,11 +17,13 @@ class GameScene: SKScene {
     var directionToTurn:DIRECTION?
     var food:SKSpriteNode?
     var gameOver = false
-    
+    weak var viewController: GameViewController!
+
     var touchDeltaX:Float = Float(0)
     var touchDeltaY:Float = Float(0)
     
     override func didMove(to view: SKView) {
+        viewController.enableBackToMainMenuButton(isEnabled: true)
         childNode(withName: "GameOver")?.alpha = 0
         snake.append(BodyPart(bodyPart: childNode(withName: "Head")! as! SKSpriteNode))
         snake.append(BodyPart(bodyPart: childNode(withName: "Body")! as! SKSpriteNode))
@@ -30,12 +33,12 @@ class GameScene: SKScene {
         
         
         
-        let wait = SKAction.wait(forDuration: 1.0)
+        let wait = SKAction.wait(forDuration: 1.1-Menu.Speed)
         
         let moveAction = SKAction.run{
             
             if(self.gameOver){
-                return
+            //    return
             }
             
             self.snake[0].previousDirection = self.snake[0].direction
@@ -116,6 +119,7 @@ class GameScene: SKScene {
                     print("Game Over")
                     self.childNode(withName: "GameOver")?.alpha = 0.65
                     self.gameOver = true
+                    self.removeAllActions()
                 }
             }
         }
@@ -169,6 +173,11 @@ class GameScene: SKScene {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         for t in touches { self.touchUp(atPoint: t.location(in: self)) }
         firstTouch = touches.first?.location(in: view)
+        if(gameOver){
+
+
+            viewController.enableBackToMainMenuButton(isEnabled: false)
+        }
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
