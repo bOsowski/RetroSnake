@@ -22,9 +22,6 @@
 		086CD7021FCD435500606A79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0810612F1FCA74690066D72B /* Assets.xcassets */; };
 		086CD7041FCD478A00606A79 /* Blade.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 086CD7031FCD477800606A79 /* Blade.ttf */; };
 		086CD7061FCF0C8100606A79 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086CD7051FCF0C8100606A79 /* Menu.swift */; };
-		088E35521FD010BC00E6CDAA /* MainMenu.sks in Resources */ = {isa = PBXBuildFile; fileRef = 088E35511FD010BC00E6CDAA /* MainMenu.sks */; };
-		088E35541FD0112400E6CDAA /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088E35531FD0112400E6CDAA /* MainMenu.swift */; };
-		088E35561FD01D1E00E6CDAA /* Options.sks in Resources */ = {isa = PBXBuildFile; fileRef = 088E35551FD01D1E00E6CDAA /* Options.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,9 +63,6 @@
 		0810615C1FCA76D20066D72B /* Direction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
 		086CD7031FCD477800606A79 /* Blade.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Blade.ttf; sourceTree = "<group>"; };
 		086CD7051FCF0C8100606A79 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
-		088E35511FD010BC00E6CDAA /* MainMenu.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MainMenu.sks; sourceTree = "<group>"; };
-		088E35531FD0112400E6CDAA /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
-		088E35551FD01D1E00E6CDAA /* Options.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Options.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +93,6 @@
 		081061161FCA74690066D72B = {
 			isa = PBXGroup;
 			children = (
-				088E35511FD010BC00E6CDAA /* MainMenu.sks */,
-				088E35551FD01D1E00E6CDAA /* Options.sks */,
-				088E35531FD0112400E6CDAA /* MainMenu.swift */,
 				081061211FCA74690066D72B /* Snake */,
 				0810613C1FCA74690066D72B /* SnakeTests */,
 				081061471FCA74690066D72B /* SnakeUITests */,
@@ -286,8 +277,6 @@
 				081061251FCA74690066D72B /* GameScene.sks in Resources */,
 				081061331FCA74690066D72B /* LaunchScreen.storyboard in Resources */,
 				081061271FCA74690066D72B /* Actions.sks in Resources */,
-				088E35521FD010BC00E6CDAA /* MainMenu.sks in Resources */,
-				088E35561FD01D1E00E6CDAA /* Options.sks in Resources */,
 				086CD7021FCD435500606A79 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,7 +305,6 @@
 				081061291FCA74690066D72B /* GameScene.swift in Sources */,
 				0810615A1FCA76A80066D72B /* Head.swift in Sources */,
 				086CD7061FCF0C8100606A79 /* Menu.swift in Sources */,
-				088E35541FD0112400E6CDAA /* MainMenu.swift in Sources */,
 				0810612B1FCA74690066D72B /* GameViewController.swift in Sources */,
 				081061581FCA75E10066D72B /* BodyPart.swift in Sources */,
 				081061231FCA74690066D72B /* AppDelegate.swift in Sources */,

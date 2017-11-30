@@ -11,7 +11,14 @@ import SpriteKit
 
 class Menu:UIViewController{
     static var Speed = 0.1;
+    
+    @IBOutlet weak var slider: UISlider!
+    
     @IBAction func speedSliderMoved(sender: UISlider) {
         Menu.Speed = Double(sender.value)
+    }
+    
+    override func viewDidLoad() {
+        slider.setValue(Float(Menu.Speed), animated: false)
     }
 }

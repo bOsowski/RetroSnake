@@ -69,6 +69,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Aff-LA-26V"/>
                     </view>
+                    <connections>
+                        <outlet property="slider" destination="C2k-b8-IGj" id="dMj-d0-SuV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PDR-l7-Wjl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -219,6 +222,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="bN4-Up-fdw"/>
+        <segue reference="yve-OL-uns"/>
     </inferredMetricsTieBreakers>
 </document>
